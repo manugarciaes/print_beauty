@@ -24,7 +24,8 @@ describe PrintBeauty::Decorator::Hash do
   end
 
   it 'decorate two level' do
-    hash = { name: 'test', level: { surname: 'garcia'} }
+    book = double("book")
+    hash = { name: 'test', level_one: { surname: 'garcia', level_two: { object: book }}}
     puts decorator.decorate(hash)
     byebug
     expect(decorator.decorate(hash)).to eq '"\e[0;31;49m { \n\e[0m\e[0;31;49m\tname => \e[0m\e[0;32;49mtest\e[0m\n\e[0;31;49m } \n\e[0m"'

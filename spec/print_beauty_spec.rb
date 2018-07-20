@@ -28,8 +28,11 @@ describe PrintBeauty::Printer do
     hash = {
       name: 'Dummy',
       surname: 'Garcia',
-      sublevel: {
-        child: 'Hello Word'
+      sublevel_one: {
+        child: 'Hello Word',
+        sublevel_one: {
+          child: 'Hello Word',
+        }
       }
     }
 
