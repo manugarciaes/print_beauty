@@ -1,2 +1,0 @@
-class PrintBeauty
-end

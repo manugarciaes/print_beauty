@@ -1,0 +1,7 @@
+    hash = {
+      name: 'Dummy',
+      surname: 'Garcia',
+      sublevel: {
+        child: 'Hello Word'
+      }
+    }
